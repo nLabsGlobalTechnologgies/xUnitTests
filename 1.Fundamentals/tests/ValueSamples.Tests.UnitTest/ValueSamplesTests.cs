@@ -49,6 +49,6 @@ public class ValueSamplesTests
         var user = _user;
 
         //Assert
-        _user.Should().BeEquivalentTo(exitingUser);
+        user.Should().BeEquivalentTo(exitingUser);
     }
 }
