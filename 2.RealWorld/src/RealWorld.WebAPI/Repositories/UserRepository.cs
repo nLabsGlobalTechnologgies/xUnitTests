@@ -6,7 +6,6 @@ namespace RealWorld.WebAPI.Repositories;
 
 public class UserRepository(AppDbContext context) : IUserRepository
 {
-
     public async Task<bool> CreateAsync(User user, CancellationToken cancellationToken = default)
     {
         await context.Users.AddAsync(user, cancellationToken);

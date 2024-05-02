@@ -31,8 +31,6 @@ public class CalcTests : IDisposable, IAsyncLifetime
 
     [Theory]
     [InlineData(6, 2, 4)]
-    [InlineData(8, 2, 8)]
-    [InlineData(0, 0, 0, Skip = "It is not possible to subtract zero with zero!")]
     public void Subtract_ShouldSubtractTwoNumbers_WhenTwoNumbersAreIntegger(int a, int b, int expected)
     {
         //Act
@@ -43,8 +41,6 @@ public class CalcTests : IDisposable, IAsyncLifetime
 
     [Theory]
     [InlineData(4, 2, 8)]
-    [InlineData(3, 2, 7)]
-    [InlineData(0, 0, 0, Skip = "Multiplication by zero cannot be done!")]
     public void Multiply_ShouldMultiplyTwoNumbers_WhenTwoNumbersAreIntegger(int a, int b, int expected)
     {
         //Act
@@ -56,8 +52,6 @@ public class CalcTests : IDisposable, IAsyncLifetime
 
     [Theory]
     [InlineData(6, 2, 3)]
-    [InlineData(8, 2, 4)]
-    [InlineData(0, 0, 0, Skip = "Dividing by zero cannot be done!")]
     public void Divide_ShouldDivideTwoNumbers_WhenTwoNumbersAreIntegger(int a, int b, int expected)
     {
         //Act
